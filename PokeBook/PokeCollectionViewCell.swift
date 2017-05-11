@@ -20,7 +20,7 @@ class PokeCollectionViewCell: UICollectionViewCell {
     }
     
     
-    func configCell(poke: Pokemon) {
+    func configCell(_ poke: Pokemon) {
         self.pokemon = poke
         pokeImage.image = UIImage(named: "\(self.pokemon.pokebookID)")
         pokeLabel.text = self.pokemon._name.capitalized
