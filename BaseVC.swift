@@ -74,7 +74,7 @@ class BaseVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         } else {
             poke = pokemonArray[indexPath.row]
         }
-        performSegue(withIdentifier: "detailSegue", sender: poke)
+        performSegue(withIdentifier: "testSegue", sender: poke)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -129,7 +129,7 @@ class BaseVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "detailSegue" {
+        if segue.identifier == "testSegue" {
             if let detailController = segue.destination as? DetailVC {
                 if let poke = sender as? Pokemon {
                     detailController.pokemon = poke

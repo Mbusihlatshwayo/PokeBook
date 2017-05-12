@@ -10,8 +10,15 @@ import Foundation
 
 class Pokemon {
     
-    var _name: String!
-    var _pokebookID: Int!
+    private var _name: String!
+    private var _pokebookID: Int!
+    private var _description: String!
+    private var _type: String!
+    private var _defense: String!
+    private var _height: String!
+    private var _weight: String!
+    private var _attack: String!
+    private var _nextEvolution: String!
     
     var name: String {
         return _name
@@ -20,8 +27,11 @@ class Pokemon {
         return _pokebookID
     }
     
+    
     init(name: String, pokeID: Int) {
         self._name = name
         self._pokebookID = pokeID
     }
+    
+    
 }

@@ -1,0 +1,6 @@
+framework module Pods_PokeBook {
+  umbrella header "Pods-PokeBook-umbrella.h"
+
+  export *
+  module * { export * }
+}
