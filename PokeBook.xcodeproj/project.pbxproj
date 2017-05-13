@@ -22,6 +22,7 @@
 		CCA355C81EC420970037B94E /* PokeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA355C71EC420970037B94E /* PokeCollectionViewCell.swift */; };
 		CCB7AD751EC4E9A400EBC30D /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB7AD741EC4E9A400EBC30D /* DetailVC.swift */; };
 		CCB7AD771EC4EFD100EBC30D /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB7AD761EC4EFD100EBC30D /* back.png */; };
+		CCF039151EC6660D0049C53D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF039141EC6660D0049C53D /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		CCA355C71EC420970037B94E /* PokeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCollectionViewCell.swift; sourceTree = "<group>"; };
 		CCB7AD741EC4E9A400EBC30D /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		CCB7AD761EC4EFD100EBC30D /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		CCF039141EC6660D0049C53D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				CC9376491EC4344C000C4AA3 /* music.mp3 */,
 				CCA355C21EC4199F0037B94E /* pokemon.csv */,
 				CC01130D1EC3F890007203BC /* Info.plist */,
+				CCF039141EC6660D0049C53D /* Constants.swift */,
 			);
 			path = PokeBook;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				CC0113021EC3F88D007203BC /* AppDelegate.swift in Sources */,
 				CCA355C61EC419F80037B94E /* Pokemon.swift in Sources */,
 				CC93763F1EC4266C000C4AA3 /* BaseVC.swift in Sources */,
+				CCF039151EC6660D0049C53D /* Constants.swift in Sources */,
 				CC9376411EC42C52000C4AA3 /* csv.swift in Sources */,
 				CCB7AD751EC4E9A400EBC30D /* DetailVC.swift in Sources */,
 			);

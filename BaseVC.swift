@@ -33,7 +33,7 @@ class BaseVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
             audioPlayer.pause()
             sender.alpha = 0.8
         } else {
-            audioPlayer.play()
+//            audioPlayer.play()
             sender.alpha = 1.0
         }
     }
@@ -45,9 +45,9 @@ class BaseVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
             audioPlayer = try AVAudioPlayer(contentsOf: URL(string: path!)!)
             audioPlayer.prepareToPlay()
             audioPlayer.numberOfLoops = -1
-            audioPlayer.play()
+//            audioPlayer.play()
         } catch let error as NSError {
-//            print(error.debugDescription)
+            print(error.debugDescription)
         }
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
