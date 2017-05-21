@@ -22,12 +22,16 @@ class DetailVC: UIViewController {
     @IBOutlet weak var evolution1Image: UIImageView!
     var pokemon: Pokemon!
     @IBOutlet weak var pokeNameLabel: UILabel!
-
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var segControl: UISegmentedControl!
+    
+    @IBOutlet weak var nextEvolutionLabel: UILabel!
     @IBAction func backButtonPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
         override func viewDidLoad() {
         super.viewDidLoad()
+        segControl.isHidden = true
         navLabel.text = pokemon.name.capitalized
         evolution1Image.image = UIImage(named: "\(pokemon.pokebookID)")
         pokemon.downloadDetails {
@@ -46,6 +50,18 @@ class DetailVC: UIViewController {
         defenseLabel.text = pokemon.defense
         idLabel.text = "\(pokemon.pokebookID)"
         baseAttackLabel.text = pokemon.attack
+        
+        if pokemon.nextEvolutionId == "" {
+            nextEvolutionLabel.text = "No evolutions"
+            evolution1Image.image = UIImage(named: "\(pokemon.pokebookID)")
+            evolution2Image.isHidden = true
+        } else {
+            evolution2Image.isHidden = false
+            evolution1Image.image = UIImage(named: "\(pokemon.pokebookID)")
+            evolution2Image.image = UIImage(named: "\(pokemon.nextEvolutionId)")
+            let evoString = "Next Evolution: \(pokemon.nextEvolutionName) - LVL\(pokemon.nextEvolutionLevel)"
+            nextEvolutionLabel.text = evoString
+        }
         
     }
 
